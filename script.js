@@ -44,7 +44,9 @@ const songs = [
     { title: "Rap do Itadori & Todo", src: "Musicas/Itadori & Todo (Jujutsu Kaisen) - My Brother _ M4rkim ft. @KaitoOFC_pbPqe6doxhk.mp3" },
     { title: "A Vontade do Fogo", src: "Musicas/A Vontade do Fogo  Naruto (Clássico)  Basara.mp3" },
     { title: "A Lenda Não Morrerá", src: "Musicas/A Lenda Não Morrerá  Gato de Botas 2  Papyrus Da Batata.mp3" },
-    { title: "Rap do Obito", src: "Musicas/7 Minutoz - Rap do Obito_ Mais Ninguém Vai Sofrer o Que Eu Sofri (NERD HITS).mp3" }
+    { title: "Rap do Obito", src: "Musicas/7 Minutoz - Rap do Obito_ Mais Ninguém Vai Sofrer o Que Eu Sofri (NERD HITS).mp3" },
+    { title: "Rap do Rock Lee", src: "Musicas/7 Minutoz - Rap do Rock Lee_ A Força da Motivação (NERD HITS).mp3" },
+    { title: "O Iluminado", src: "Musicas/TAKERU - O Iluminado [Buda  Shuumatsu no Valkyrie (Record of Ragnarok)].mp3" }
 ];
 
 let currentSongIndex = 0;
@@ -108,3 +110,10 @@ Array.from(songList).forEach((songItem, index) => {
 
 // Inicializar a primeira música
 loadSong(currentSongIndex);
+
+document.getElementById("randomBtn").addEventListener("click", function() {
+    const randomIndex = Math.floor(Math.random() * songs.length);
+    const randomSong = songs[randomIndex];
+    document.getElementById("audioPlayer").src = randomSong.src;
+    document.getElementById("audioPlayer").play();
+});
