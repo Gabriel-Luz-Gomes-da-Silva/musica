@@ -1,0 +1,264 @@
+/* Estilo para o vídeo de fundo */
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+/* Estilização da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* Container principal */
+.player-container {
+    text-align: center;
+    background-color: rgba(44, 44, 44, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 400px;
+    z-index: 1;
+}
+
+/* Botão de alternância da playlist */
+.toggle-btn {
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #d35400;
+}
+
+/* Playlist inicialmente oculta */
+.playlist {
+    text-align: left;
+    margin-top: 20px;
+    display: none; /* Inicialmente escondida */
+}
+
+/* Quando a classe 'show' é adicionada, mostra a playlist */
+#playlist.show {
+    display: block; /* Mostrar playlist ao clicar no botão */
+}
+
+/* Estilos da lista de músicas */
+#songList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#songList li {
+    padding: 10px;
+    background-color: #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#songList li:hover {
+    background-color: #444;
+}
+
+/* Estilos adicionais para os botões, playlist, etc. */
+
+
+/* Animação para mover o fundo */
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+/* Container principal */
+.player-container {
+    text-align: center;
+    background-color: rgba(44, 44, 44, 0.85); /* Fundo semi-transparente para destacar o conteúdo */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+/* Player de áudio */
+.audio-player {
+    margin-bottom: 20px;
+}
+
+/* Controles de música */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn {
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+    background-color: #d35400;
+}
+
+/* Playlist */
+.playlist {
+    text-align: left;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+#songList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#songList li {
+    padding: 10px;
+    background-color: #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#songList li:hover {
+    background-color: #444;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .player-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Playlist */
+.playlist {
+    text-align: left;
+    margin-top: 20px;
+    display: none; /* Inicialmente escondido */
+}
+
+#playlist.show {
+    display: block; /* Mostrar quando a classe 'show' estiver presente */
+}
+
+#songList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#songList li {
+    padding: 10px;
+    background-color: #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#songList li:hover {
+    background-color: #444;
+}
+
+/* Botão de alternância */
+.toggle-btn {
+    border-radius: 15px;
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #d35400;
+}
+
+/* Container que permite a rolagem */
+.scroll-container {
+    width: 100vw; /* Largura total da tela */
+    height: 100vh; /* Altura total da tela */
+    overflow: auto; /* Permite a rolagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: thin; /* Controla a largura da barra de rolagem */
+    scrollbar-color: #f39c12 #333; /* Cor da barra de rolagem */
+}
+
+/* Estilo da barra de rolagem para navegadores webkit */
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+/* Estilo interno do player container */
+.player-container {
+    max-height: 90vh; /* Limita a altura do container */
+    overflow-y: auto; /* Rolagem vertical dentro do player, se necessário */
+}

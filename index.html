@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekTunes</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="vecteezy_audio-spectrum-motion-animation_49102227.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <!-- Container principal -->
+    <div class="player-container">
+        <h1>GeekTunes</h1>
+        <div class="audio-player">
+            <audio id="audioPlayer"></audio>
+        </div>
+        <div class="controls">
+            <button id="prevBtn" class="control-btn">⏮️</button>
+            <button id="playPauseBtn" class="control-btn">▶️</button>
+            <button id="nextBtn" class="control-btn">⏭️</button>
+        </div>
+        <button id="togglePlaylist" class="toggle-btn">🎵 Playlist</button>
+        <div class="playlist" id="playlist">
+            <h2>Playlist</h2>
+            <ul id="songList">
+                <li>Coca-cola</li>
+                <li>Rap do Capitão América</li>
+                <li>Rap da Diane</li>
+                <li>Rap do Barba Branca</li>
+                <li>Tipo Gogeta 2 ULTRAEGO</li>
+                <li>Rap do Moisés</li>
+                <li>Guerra em Wano</li>
+                <li>Rap do Katakuri</li>
+                <li>Rap da Hinata</li>
+                <li>Rap do Ban</li>
+                <li>Rap dos Coringas</li>
+                <li>Rap do Gaara</li>
+                <li>Rap do Deadpool</li>
+                <li>Vibe Denji</li>
+                <li>Rap do Doutor Estranho</li>
+                <li>Rap do Homem de Ferro</li>
+                <li>Rap do Homem-Aranha</li>
+                <li>Rap do Homem-Aranha, Flash e Batman</li>
+                <li>Rap do Hulk</li>
+                <li>Rap do Naruto</li>
+                <li>Rap do Escanor</li>
+                <li>Rap do Jiraiya</li>
+                <li>Rap do Kakashi</li>
+                <li>Rap do King</li>
+                <li>Shibuya</li>
+                <li>Rap do Mitsuya</li>
+                <li>Lunáticos</li>
+                <li>Rap do Madara</li>
+                <li>Rap do Minato</li>
+                <li>Rap do Venom</li>
+                <li>Rap do Madara</li>
+                <li>Rap do Sasuke</li>
+                <li>Rap do Meliodas, Ban e Escanor</li>
+                <li>Gear 5</li>
+                <li>Rap do Meliodas</li>
+                <li>Rap do Maito Gai</li>
+                <li>Rap do Gowther</li>
+                <li>Rap do Kratos, Meliodas e Naruto</li>
+                <li>Terror em Londres</li>
+                <li>Olhos Vendados</li>
+                <li>Lideres</li>
+                <li>Rap do Katakuri 2</li>
+                <li>Rap do Itadori & Todo</li>
+                <li>A Vontade do Fogo</li>
+                <li>A Lenda Não Morrerá</li>
+                <li>Rap do Obito</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
