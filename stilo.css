@@ -37,15 +37,15 @@ body {
 
 /* Botão de alternância da playlist */
 .toggle-btn {
-    background-color: #1758c1; /* Cor de fundo do botão */
-    border: none; /* Remove a borda padrão */
-    color: #fff; /* Cor do texto */
-    font-size: 1.2rem; /* Tamanho da fonte */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    margin-top: 20px; /* Espaçamento superior */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Mostra o cursor como mãozinha ao passar sobre o botão */
-    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+    background-color: rgba(44, 44, 44, 0.85); /* Fundo semi-transparente */
+    border-radius: 15px; /* Bordas arredondadas */
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .toggle-btn:hover {
@@ -100,9 +100,25 @@ h1 {
     color: #2b75ed; /* Cor do texto */
 }
 
-/* Player de áudio */
+/* Barra de progresso do player */
 .audio-player {
-    margin-bottom: 20px; /* Espaçamento inferior */
+    width: 100%;
+    background: #333;
+    border-radius: 8px;
+    height: 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.audio-player::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Placeholder para o progresso da música */
+    height: 100%;
+    background: #2b75ed;
+    border-radius: 8px;
 }
 
 /* Controles de música */
@@ -118,16 +134,17 @@ h1 {
     align-items: center; /* Alinha os botões verticalmente */
 }
 
+/* Botões de controle */
 .control-btn {
-    background-color: #1758c1; /* Cor de fundo dos botões */
-    border: none; /* Remove a borda padrão */
-    color: #fff; /* Cor do texto */
-    font-size: 1.5rem; /* Tamanho da fonte */
-    padding: 10px 20px; /* Espaçamento interno */
-    margin: 0 10px; /* Espaçamento lateral entre os botões */
-    border-radius: 5px; /* Botões circulares */
-    cursor: pointer; /* Mostra o cursor como mãozinha */
-    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .control-btn:hover {
@@ -183,4 +200,16 @@ h2 {
 .player-container {
     max-height: 90vh; /* Limita a altura do container */
     overflow-y: auto; /* Habilita rolagem vertical se necessário */
+}
+
+/* Estilos para o título da música */
+#current-song-title {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#song-title {
+    font-weight: bold;
+    color: #2b75ed; /* Azul semelhante ao estilo da página */
 }

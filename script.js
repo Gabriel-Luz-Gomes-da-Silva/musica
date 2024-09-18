@@ -59,22 +59,25 @@ const nextBtn = document.getElementById('nextBtn');
 const songList = document.getElementById('songList').getElementsByTagName('li');
 const playlist = document.getElementById('playlist');
 const togglePlaylistBtn = document.getElementById('togglePlaylist');
+const speedUpBtn = document.getElementById('speedUpBtn');
+const songTitleElement = document.getElementById('song-title'); // Elemento para exibir o título da música
 
 function loadSong(index) {
-    currentSongIndex = index; // Atualiza o índice da música atual
+    currentSongIndex = index; 
     audioPlayer.src = songs[index].src;
     audioPlayer.play();
-    playPauseBtn.textContent = '⏸ Pause';
+    playPauseBtn.textContent = '⏸ ';
     isPlaying = true;
+    songTitleElement.textContent = songs[index].title; // Atualiza o título da música
 }
 
 function playPauseSong() {
     if (isPlaying) {
         audioPlayer.pause();
-        playPauseBtn.textContent = '▶️ Play';
+        playPauseBtn.textContent = '▶️';
     } else {
         audioPlayer.play();
-        playPauseBtn.textContent = '⏸ Pause';
+        playPauseBtn.textContent = '⏸';
     }
     isPlaying = !isPlaying;
 }
@@ -93,27 +96,37 @@ function togglePlaylist() {
     playlist.classList.toggle('show');
 }
 
-// Evento para passar para a próxima música quando a atual terminar
 audioPlayer.addEventListener('ended', nextSong);
-
 playPauseBtn.addEventListener('click', playPauseSong);
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 togglePlaylistBtn.addEventListener('click', togglePlaylist);
 
-// Adicionar evento aos itens da playlist
 Array.from(songList).forEach((songItem, index) => {
     songItem.addEventListener('click', () => {
-        loadSong(index); // Carregar a música selecionada na playlist
+        loadSong(index);
     });
 });
 
-// Inicializar a primeira música
 loadSong(currentSongIndex);
 
 document.getElementById("randomBtn").addEventListener("click", function() {
     const randomIndex = Math.floor(Math.random() * songs.length);
-    const randomSong = songs[randomIndex];
-    document.getElementById("audioPlayer").src = randomSong.src;
-    document.getElementById("audioPlayer").play();
+    loadSong(randomIndex);
+});
+
+speedUpBtn.addEventListener('mousedown', function() {
+    audioPlayer.playbackRate = 2.0;
+});
+
+speedUpBtn.addEventListener('mouseup', function() {
+    audioPlayer.playbackRate = 1.0;
+});
+
+speedUpBtn.addEventListener('touchstart', function() {
+    audioPlayer.playbackRate = 2.0;
+});
+
+speedUpBtn.addEventListener('touchend', function() {
+    audioPlayer.playbackRate = 1.0;
 });

@@ -20,19 +20,20 @@
         <div class="audio-player">
             <audio id="audioPlayer"></audio>
         </div>
+
+        <br>
+        
         <div class="controls">
-            <button id="playPauseBtn" class="control-btn">▶️/⏸️</button>
-        </div>
-
-        <br>
-
-        <div class="controles">
+            <button id="speedUpBtn" class="control-btn">⏩</button>
             <button id="prevBtn" class="control-btn">⏮️</button>
-            <button id="randomBtn" class="control-btn">🔀</button>
+            <button id="playPauseBtn" class="control-btn">▶️/⏸️</button>
             <button id="nextBtn" class="control-btn">⏭️</button>
+            <button id="randomBtn" class="control-btn">🔀</button>
         </div>
 
-        <br>
+        <!-- Título da música -->
+        <div id="current-song-title">Tocando agora: <span id="song-title"></span></div>
+
 
         <button id="togglePlaylist" class="toggle-btn">🎵 Playlist</button>
         <div class="playlist" id="playlist">
