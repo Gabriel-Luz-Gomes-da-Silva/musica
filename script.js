@@ -29,7 +29,6 @@ const songs = [
     { title: "Rap do Madara", src: "Musicas/7 Minutoz - Rap do Madara_ Me Tornei um Deus (NERD HITS).mp3" },
     { title: "Rap do Minato", src: "Musicas/7 Minutoz - Rap do Minato_ O Dever de um Pai (NERD HITS).mp3" },
     { title: "Rap do Venom", src: "Musicas/7 Minutoz - Rap do Venom_ Nós Somos Venom (NERD HITS).mp3" },
-    { title: "Rap do Madara", src: "Musicas/7 Minutoz - Rap do Madara, Pain e Orochimaru_ O Quanto Eu Posso Ser Cruel.mp3" },
     { title: "Rap do Sasuke", src: "Musicas/7 Minutoz - Rap do Sasuke_ Maldição do Ódio (Nerd Hits).mp3" },
     { title: "Rap do Meliodas, Ban e Escanor", src: "Musicas/7 Minutoz - Rap do Meliodas, Ban e Escanor_ O Pecado Mais Forte (NERD HITS).mp3" },
     { title: "Gear 5", src: "Musicas/Gear 5  Luffy Pt. 3 (One Piece)  Basara.mp3" },
@@ -129,4 +128,60 @@ speedUpBtn.addEventListener('touchstart', function() {
 
 speedUpBtn.addEventListener('touchend', function() {
     audioPlayer.playbackRate = 1.0;
+});
+
+const volumeBtn = document.querySelector('.volume-btn');
+const volumeSlider = document.querySelector('.volume-control input[type="range"]');
+let isMuted = false;
+
+// Função para alternar o estado de volume
+function toggleVolume() {
+    if (isMuted) {
+        audioPlayer.volume = volumeSlider.value / 100; // Restaura o volume
+        volumeBtn.textContent = '🔊'; // Ícone de volume
+    } else {
+        audioPlayer.volume = 0; // Mute
+        volumeBtn.textContent = '🔇'; // Ícone de mutado
+    }
+    isMuted = !isMuted; // Alterna o estado
+}
+
+// Configura o controle de volume
+function setupVolumeControl() {
+    // Evento de clique no botão de volume
+    volumeBtn.addEventListener('click', toggleVolume);
+
+    // Define o volume inicial do player
+    audioPlayer.volume = volumeSlider.value / 100;
+
+    // Atualiza o volume quando o slider é movido
+    volumeSlider.addEventListener('input', (e) => {
+        if (!isMuted) {
+            audioPlayer.volume = e.target.value / 100; // Atualiza o volume
+        }
+    });
+}
+
+// Chama a função para configurar o controle de volume
+setupVolumeControl();
+
+const progressBar = document.getElementById('progressBar');
+const timer = document.getElementById('timer');
+
+audioPlayer.addEventListener('timeupdate', () => {
+    const { currentTime, duration } = audioPlayer;
+    const progress = (currentTime / duration) * 100;
+    progressBar.value = progress;
+
+    const currentMinutes = Math.floor(currentTime / 60);
+    const currentSeconds = Math.floor(currentTime % 60).toString().padStart(2, '0');
+    const durationMinutes = Math.floor(duration / 60);
+    const durationSeconds = Math.floor(duration % 60).toString().padStart(2, '0');
+
+    timer.textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
+});
+
+progressBar.addEventListener('input', () => {
+    const newTime = (progressBar.value / 100) * audioPlayer.duration;
+    audioPlayer.currentTime = newTime;
 });

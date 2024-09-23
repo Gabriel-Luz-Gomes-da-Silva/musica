@@ -97,28 +97,6 @@ body {
 h1 {
     font-size: 2rem; /* Tamanho da fonte */
     margin-bottom: 20px; /* Espaçamento inferior */
-    color: #2b75ed; /* Cor do texto */
-}
-
-/* Barra de progresso do player */
-.audio-player {
-    width: 100%;
-    background: #333;
-    border-radius: 8px;
-    height: 8px;
-    margin-top: 20px;
-    position: relative;
-}
-
-.audio-player::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%; /* Placeholder para o progresso da música */
-    height: 100%;
-    background: #2b75ed;
-    border-radius: 8px;
 }
 
 /* Controles de música */
@@ -212,4 +190,113 @@ h2 {
 #song-title {
     font-weight: bold;
     color: #2b75ed; /* Azul semelhante ao estilo da página */
+}
+
+#progressBar {
+    width: 100%;
+    cursor: pointer;
+}
+
+#timer {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.progress-bar {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    width: 100%; /* Largura total */
+    height: 10px; /* Altura da barra */
+    background: rgba(255, 255, 255, 0.3); /* Fundo da barra */
+    border-radius: 5px; /* Bordas arredondadas */
+    outline: none; /* Remove o contorno */
+    cursor: pointer; /* Cursor de mão */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+/* Estilo do 'thumb' (parte que você arrasta) */
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    appearance: none;
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    background: #2b75ed; /* Cor do thumb */
+    border-radius: 50%; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão */
+}
+
+/* Para navegadores que não são baseados em WebKit */
+.progress-bar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2b75ed;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.player-container {
+    position: relative; /* Define um contexto de posicionamento para elementos filhos */
+}
+
+.volume-control {
+    top: 20px; /* Distância do topo da player-container */
+    left: 20px; /* Distância da esquerda da player-container */
+    align-items: center; /* Centraliza verticalmente o ícone e a barra */
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    appearance: none;
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 5px; /* Altura da barra do controle */
+    background: #ccc; /* Cor da barra */
+    border-radius: 5px; /* Bordas arredondadas da barra */
+    outline: none; /* Remove o contorno ao focar */
+    margin-left: -10px; /* Espaço entre o ícone e a barra de volume */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    appearance: none;
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    background: #2b75ed; /* Cor do thumb */
+    border-radius: 50%; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    background: #2b75ed; /* Cor do thumb */
+    border-radius: 50%; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão */
+}
+
+/* Estilos do botão de volume */
+.volume-btn {
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border-radius: 50%; /* Bordas arredondadas */
+    padding: 10px; /* Ajuste o padding para torná-lo menor */
+    width: 40px; /* Largura do botão menor que os outros */
+    height: 40px; /* Altura do botão menor que os outros */
+    margin: 0 10px; /* Margem lateral */
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.volume-btn:hover {
+    background-color: #1e69e3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Ajuste a exibição dos controles para incluir o botão de volume */
+.controls {
+    display: flex; /* Alinha os botões de controle horizontalmente */
+    justify-content: center; /* Centraliza os botões */
+    align-items: center; /* Alinha os botões verticalmente */
+}
+
+.volume-control {
+    align-items: center; /* Centraliza verticalmente */
 }

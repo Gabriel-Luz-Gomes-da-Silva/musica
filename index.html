@@ -21,6 +21,11 @@
             <audio id="audioPlayer"></audio>
         </div>
 
+        <div class="progress-container">
+            <input type="range" id="progressBar" class="progress-bar" value="0" step="1" min="0">
+            <div id="timer">00:00 / 00:00</div>
+        </div>
+
         <br>
         
         <div class="controls">
@@ -33,7 +38,12 @@
 
         <!-- Título da música -->
         <div id="current-song-title">Tocando agora: <span id="song-title"></span></div>
+        <br>
 
+        <div class="volume-control">
+            <button class="volume-btn">🔊</button>
+            <input type="range" class="progress-bar" min="0" max="100" value="50">
+        </div>   
 
         <button id="togglePlaylist" class="toggle-btn">🎵 Playlist</button>
         <div class="playlist" id="playlist">
@@ -69,7 +79,6 @@
                 <li>Rap do Madara</li>
                 <li>Rap do Minato</li>
                 <li>Rap do Venom</li>
-                <li>Rap do Madara</li>
                 <li>Rap do Sasuke</li>
                 <li>Rap do Meliodas, Ban e Escanor</li>
                 <li>Gear 5</li>
