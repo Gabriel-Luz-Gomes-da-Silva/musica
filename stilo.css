@@ -54,9 +54,33 @@ body {
 
 /* Playlist inicialmente oculta */
 .playlist {
+    border-radius: 15px; /* Bordas arredondadas */
     text-align: left; /* Alinha o texto à esquerda */
-    margin-top: 20px; /* Espaçamento superior */
     display: none; /* Esconde a playlist por padrão */
+    width: 100%; /* Define a largura completa da playlist */
+    height: 150px; /* Define a altura fixa para o contêiner */
+    overflow: hidden; /* Garante que o conteúdo não saia do contêiner */
+    padding: 10px;
+    box-sizing: border-box; /* Inclui padding dentro da largura/altura */
+}
+
+/* Estilo para a lista de músicas */
+#playlist {
+    max-height: 100%; /* Ocupa todo o espaço disponível no contêiner */
+    overflow-y: auto; /* Ativa o scroll apenas dentro do contêiner */
+    padding-right: 10px; /* Adiciona espaço para a barra de rolagem */
+}
+
+/* Estilo para os itens da lista */
+#playlist li {
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* Estilo para o efeito de hover */
+#playlist li:hover {
+    background-color: #f0f0f0;
 }
 
 /* Quando a classe 'show' é adicionada, mostra a playlist */
@@ -177,7 +201,6 @@ h2 {
 /* Estilo interno do player container */
 .player-container {
     max-height: 90vh; /* Limita a altura do container */
-    overflow-y: auto; /* Habilita rolagem vertical se necessário */
 }
 
 /* Estilos para o título da música */
@@ -198,10 +221,20 @@ h2 {
 }
 
 #timer {
-    margin-left: 10px;
-    font-size: 1rem;
-    color: #fff;
+    font-family: Arial, sans-serif; /* Fonte do timer */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto do timer */
+    position: absolute; /* Posiciona o timer sobre a barra */
+    
+    left: 50%; /* Alinha ao centro */
+    transform: translateX(-50%); /* Ajusta o posicionamento para centralizar */
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
 }
+
+
 
 .progress-bar {
     -webkit-appearance: none; /* Remove o estilo padrão do navegador */
@@ -301,7 +334,7 @@ input[type="range"]::-moz-range-thumb {
     align-items: center; /* Centraliza verticalmente */
 }
 
-li.playing {
-    color: #ff69b4; /* cor de exemplo, você pode escolher qualquer cor que deseje */
-    font-weight: bold; /* opcional, para destacar ainda mais */
-  }
+.active-song {
+    color: #3582ff; /* Cor para a música que está tocando */
+    font-weight: bold; /* Estilo opcional para destacar a música */
+}
