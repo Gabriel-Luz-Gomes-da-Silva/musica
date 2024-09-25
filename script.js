@@ -34,8 +34,8 @@ const songs = [
     { title: "Gear 5", src: "Musicas/Gear 5  Luffy Pt. 3 (One Piece)  Basara.mp3" },
     { title: "Rap do Meliodas", src: "Musicas/7 Minutoz - Rap do Meliodas_ Eu Sou o Capitão.mp3" },
     { title: "Rap do Maito Gai", src: "Musicas/7 Minutoz - Rap do Maito Gai_ O Ninja Mais Forte (NERD HITS).mp3" },
-    { title: "Rap do Gowther", src: "Musicas/7 Minutoz - Rap do Gowther_ Eu Não Tenho Coração (NERD HITS).mp3" },
-    { title: "Rap do Kratos, Meliodas e Naruto", src: "Musicas/7 Minutoz - Rap do Kratos, Meliodas e Naruto_ O Poder da Minha Ira (NERD HITS).mp3" },
+    { title: "Rap do Doflamingo", src: "Musicas/Rap do Doflamingo (One Piece)   UM REI  NERD HITS-55990781cfeffe31b3d8cee3c6d2aa7b.mp3" },
+    { title: "Rap do Coringa, Arlequina, Hisoka e Pennywise", src: "Musicas/Rap do Coringa, Arlequina, Hisoka e Pennywise   CIRCO DOS HORRORES 2  NERD HITS-1efce1634b7e60e3d0c4f16477d7c0d1.mp3" },
     { title: "Terror em Londres", src: "Musicas/Terror em Londres _ Jack, o Estripador (Shuumatsu no Valkyrie) _ Enygma_cPOjZwsus2Y.mp3" },
     { title: "Olhos Vendados", src: "Musicas/Olhos Vendados  Gojo e Qin Shi Huang  AniRap e VMZ.mp3" },
     { title: "Lideres", src: "Musicas/Lideres  Tokyo Revengers  ESPECIAL 800K  URT.mp3" },
@@ -45,7 +45,17 @@ const songs = [
     { title: "A Lenda Não Morrerá", src: "Musicas/A Lenda Não Morrerá  Gato de Botas 2  Papyrus Da Batata.mp3" },
     { title: "Rap do Obito", src: "Musicas/7 Minutoz - Rap do Obito_ Mais Ninguém Vai Sofrer o Que Eu Sofri (NERD HITS).mp3" },
     { title: "Rap do Rock Lee", src: "Musicas/7 Minutoz - Rap do Rock Lee_ A Força da Motivação (NERD HITS).mp3" },
-    { title: "O Iluminado", src: "Musicas/TAKERU - O Iluminado [Buda  Shuumatsu no Valkyrie (Record of Ragnarok)].mp3" }
+    { title: "O Iluminado", src: "Musicas/TAKERU - O Iluminado [Buda  Shuumatsu no Valkyrie (Record of Ragnarok)].mp3" },
+    { title: "Rap do Sanji", src: "Musicas/Rap do Sanji (One Piece)   APENAS UM TRAGO  NERD HITS-6533f135d743ff735a17a2658d41370c.mp3" },
+    { title: "Rap do Kakashi, Naruto, Sasuke e Sakura", src: "Musicas/Rap do Kakashi, Naruto, Sasuke e Sakura   TIME 7  NERD HITS-a3130bd7cac8c22643cb6e59c8e0cf4e.mp3" },
+    { title: "Rap do Ace", src: "Musicas/Rap do Ace (One Piece)   PUNHOS DE FOGO  NERD HITS-104f5dfc460e87402a612b4b6003c64a.mp3" },
+    { title: "Rap do Asta", src: "Musicas/Rap do Asta (Black Clover)   EU VOU SER O REI MAGO  NERD HITS-02a3dce46add7ba3a545a5f6239c9d55.mp3" },
+    { title: "AKUMA NO MI", src: "Musicas/Lucas A.R.T.   AKUMA NO MI [Prod. LionRiddims]-ff342d700a407821282e1ef4be1e2907.mp3" },
+    { title: "UCHIHA", src: "Musicas/Lucas A.R.T.   UCHIHA [Prod. Jurrivh]-cb89ebcd62d3512c3be738d671d55af9.mp3" },
+    { title: "KAKASHI", src: "Musicas/KAKASHI   Pedro Alvez, Lucas A.R.T. e Gabriel Rodrigues [Prod. Zero]-7e6124e04b17e796b04ca18c5b395f5a.mp3" },
+    { title: "DEATH NOTE", src: "Musicas/DEATH NOTE   Gabriel Rodrigues, Pablo Matheuz e Lucas A.R.T. [Prod. 808 Ander]-c2e878e629c34336db79710f3e04c540.mp3" },
+    { title: "Rap do Deadpool e Wolverine", src: "Musicas/Deadpool e Wolverine   BALAS E GARRAS  7 Minutoz-2d4a7f8fff1a2dccc3bd9286123a5354.mp3" },
+    { title: "Rap do Naruto e Kurama", src: "Musicas/Rap do Naruto e Kurama (Boruto)   NOSSO ADEUS...  NERD HITS-a19f7b39dc40d03c465ed303e1db997a.mp3" }
 ];
 
 let currentSongIndex = 0;

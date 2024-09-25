@@ -300,3 +300,8 @@ input[type="range"]::-moz-range-thumb {
 .volume-control {
     align-items: center; /* Centraliza verticalmente */
 }
+
+li.playing {
+    color: #ff69b4; /* cor de exemplo, você pode escolher qualquer cor que deseje */
+    font-weight: bold; /* opcional, para destacar ainda mais */
+  }
