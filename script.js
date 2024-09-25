@@ -64,7 +64,7 @@ const songs = [
     { title: "Meu Bem éVvocê", src: "Musicas/Meu bem é você 💔  Obito e Rin  ft. @AnnyTHN  JRP-eb74464b502454c7757dd065a2aa23d0.mp3"},
     { title: "Até o Fim", src: "Musicas/Até o Fim ❤️ Kirito  Asuna (Sword Art Online)  ft. @Meizy  _ JRP-8386be5a54b98ea6a20d9e4a99deacd2.mp3" },
     { title: "Vou Ser um Hokage", src: "Musicas/Vou ser um hokage  Naruto  JRP-a0abfe4d958df0c75b773e0de71f139a.mp3" },
-    { title: "JUDAS", src: "Musicas/7 Minutoz   JUDAS-2ed23c94f19ce1fe1cc0ec7becae976a.mp3" },
+    { title: "Judas", src: "Musicas/7 Minutoz   JUDAS-2ed23c94f19ce1fe1cc0ec7becae976a.mp3" },
 ];
 
 let currentSongIndex = 0;
