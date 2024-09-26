@@ -61,7 +61,7 @@ const songs = [
     { title: "Primeiro Amor", src: "Musicas/❤️ Primeiro amor (Minato e Kushina) JRP ft. @Meizy-c39b9a35ab0f1e4cc0ec3bc7559166a2.mp3"},
     { title: "Últimos de Nós", src: "Musicas/Rap do Joel e Ellie (The Last of Us)   OS ÚLTIMOS DE NÓS  NERD HITS-5a88851939a306680539e4fae14d7a57.mp3" },
     { title: "Amores se Acabam", src: "Musicas/Amores se acabam   Hina e Takemichi (Tokyo Revengers)  JRP-2b7252c528ea61fc3e9d873578fc4063.mp3" },
-    { title: "Meu Bem éVvocê", src: "Musicas/Meu bem é você 💔  Obito e Rin  ft. @AnnyTHN  JRP-eb74464b502454c7757dd065a2aa23d0.mp3"},
+    { title: "Meu Bem é Você", src: "Musicas/Meu bem é você 💔  Obito e Rin  ft. @AnnyTHN  JRP-eb74464b502454c7757dd065a2aa23d0.mp3"},
     { title: "Até o Fim", src: "Musicas/Até o Fim ❤️ Kirito  Asuna (Sword Art Online)  ft. @Meizy  _ JRP-8386be5a54b98ea6a20d9e4a99deacd2.mp3" },
     { title: "Vou Ser um Hokage", src: "Musicas/Vou ser um hokage  Naruto  JRP-a0abfe4d958df0c75b773e0de71f139a.mp3" },
     { title: "Judas", src: "Musicas/7 Minutoz   JUDAS-2ed23c94f19ce1fe1cc0ec7becae976a.mp3" },
