@@ -65,6 +65,25 @@ const songs = [
     { title: "Até o Fim", src: "Musicas/Até o Fim ❤️ Kirito  Asuna (Sword Art Online)  ft. @Meizy  _ JRP-8386be5a54b98ea6a20d9e4a99deacd2.mp3" },
     { title: "Vou Ser um Hokage", src: "Musicas/Vou ser um hokage  Naruto  JRP-a0abfe4d958df0c75b773e0de71f139a.mp3" },
     { title: "Judas", src: "Musicas/7 Minutoz   JUDAS-2ed23c94f19ce1fe1cc0ec7becae976a.mp3" },
+    { title: "Cuidarei de Você", src: "Musicas/Cuidarei de Você  Hori  Miyamura (Horimiya) Ft. @IsaCampx  Nickzinn-ca557e9ebea34618cfbd85b4b30c8ae8.mp3"},
+    { title: "Tipo Jiraiya", src: "Musicas/Tipo Jiraiya 🐸😈 (Naruto)  Style Trap  Prod. Sidney Scaccio x Johnny Lowd  MHRAP-195e9d5b42a1e3688710f3c5cefb98a0.mp3" },
+    { title: "Guerra de Amor", src: "Musicas/Uma Guerra de Amor (Kaguya Sama LOVE IS WAR)  Nickzinn-f8e00a18bda444cf5195431cedb626c7.mp3" },
+    { title: "Apenas um Vilão por Diversão", src: "Musicas/SOU APENAS UM VILÃO POR DIVERSÃO   Saitama Rap (Versão Sombria)  Takeru [Prod. 808 Ander]-d7e03728028efcf77f55d3c1247e4a42.mp3" },
+    { title: "100 Amigos", src: "Musicas/Quer 100 Amigos (Komi Can't Communicate)  Nickzinn-142c0ba99b83a13d1ef79284f6043fcc.mp3" },
+    { title: "Verdadeiro Rap do Naruto", src: "Musicas/O VERDADEIRO RAP DO NARUTO (+18)  Takeru-40da174161cc50501416ed4df44e1265.mp3" },
+    { title: "Verdadeiro Rap do Ayanokoji", src: "Musicas/O VERDADEIRO RAP DO AYANOKOJI (+18)  Takeru-dd2792e92d5589c69e39f53aae59a0c6.mp3" },
+    { title: "Ragnarok", src: "Musicas/RAGNAROK   Shuumatsu no Valkyrie  Takeru  UnionZ-ef033ceb70990860f72b75684c0e3e7e.mp3" },
+    { title: "Provocar", src: "Musicas/Provocar (Uzaki chan wa Asobitai!)  Nickzinn-dcec17d5beb7919e90b33c5f49b1d189.mp3" },
+    { title: "My Vampire!", src: "Musicas/My Vampire! (Call Of The Night)  Nickzinn-39cd8095031e610c68742bde964a3325.mp3" },
+    { title: "Muryo Kusho", src: "Musicas/MURYO KUSHO   Gojo (Jujutsu Kaisen)  Takeru-58d6d5e9e444ccc212bf6909dbd32932.mp3" },
+    { title: "Meu Sol", src: "Musicas/Meu Sol (Tenki no Ko)  Nickzinn-c7a9a82d7bbcc3a325914f333de2d272.mp3" },
+    { title: "Lótus Negra", src: "Musicas/LÓTUS NEGRA   Rock Lee Rap (Versão Sombria)  Takeru Feat. rAid (Lendários) [Prod. Sidney Scaccio]-cabac846fa3cfec7cda333fc68bed96a.mp3" },
+    { title: "Gyutaro", src: "Musicas/GYUTARO 💔  Lua Superior 6  (Demon Slayer) Prod. Sid  MHRAP-1902b853cd0dbc472d3dbc8cbecf6136.mp3" },
+    { title: "Hokage da Quebrada", src: "Musicas/HOKAGE DA QUEBRADA   O Verdadeiro Trap do Naruto (+18)  Takeru [Prod. 808 Ander]-4389b77d203fcdf1dc2d18dc2b21fe68.mp3" },
+    { title: "Anjo", src: "Musicas/Anjo (Otonari no Tenshi Sama)  Nickzinn-074bcd7172c5d96600ff0dd0b535989d.mp3" },
+    { title: "Psicopatia", src: "Musicas/FELÍCIA ROCK   Psicopatia (Anime Mix)  Feat. Takeru  Prod. MK-a98f47794f5e5a299301c97ddaf3de54.mp3" },
+    { title: "Escudo da Fúria", src: "Musicas/ESCUDO DA FÚRIA   Takeru [Prod. 808 Ander]-fe7a65db475a55b662c118fcbcd0bb8f.mp3" },
+    
 ];
 
 let currentSongIndex = 0;
