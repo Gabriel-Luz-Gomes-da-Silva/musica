@@ -129,6 +129,7 @@ const songs = [
     { title: "Novo Kira", src: "Musicas/♪ Minoru Tanaka (Death Note)  O Novo Kira  AniRap-3290492facad7af6b46c58cc82df4d1e.mp3" },
     { title: "Purgatório", src: "Musicas/♪ Ban  Purgatório  AniRap (@HunterMsc)-a41f84d5b8b25e2afa3e10c096ac5dee.mp3" },
     { title: "Pecado ou Punição", src: "Musicas/♪ Shuji Hanma  Pecado ou Punição  AniRap-4884098b9756699e5f97c672764d10d5.mp3" },
+    { title: "Declaração", src: "Musicas/DECLARAÇÃO DO NARUTO PARA SAKURA☀️🌸 (Naruto)  ProdbyIOF-fcb9f8fd460db9db640fb8aa1d9fb3af.mp3" },
     
 ];
 
