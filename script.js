@@ -145,16 +145,30 @@ const playlist = document.getElementById('playlist');
 const togglePlaylistBtn = document.getElementById('togglePlaylist');
 const speedUpBtn = document.getElementById('speedUpBtn');
 const songTitleElement = document.getElementById('song-title'); // Elemento para exibir o título da música
+const progressBar = document.getElementById('progressBar');
+const timer = document.getElementById('timer');
 
+// Elementos para controle de volume
+const volumeBtn = document.querySelector('.volume-btn');
+const volumeSlider = document.querySelector('.volume-control input[type="range"]');
+let isMuted = false;
+
+// Função para carregar a música selecionada
 function loadSong(index) {
+    Array.from(songList).forEach(songItem => {
+        songItem.classList.remove('active-song');
+    });
+
     currentSongIndex = index; 
     audioPlayer.src = songs[index].src;
     audioPlayer.play();
     playPauseBtn.textContent = '⏸ ';
     isPlaying = true;
     songTitleElement.textContent = songs[index].title; // Atualiza o título da música
+    songList[index].classList.add('active-song');
 }
 
+// Função para reproduzir ou pausar a música
 function playPauseSong() {
     if (isPlaying) {
         audioPlayer.pause();
@@ -166,39 +180,46 @@ function playPauseSong() {
     isPlaying = !isPlaying;
 }
 
+// Função para ir para a música anterior
 function prevSong() {
     currentSongIndex = (currentSongIndex > 0) ? currentSongIndex - 1 : songs.length - 1;
     loadSong(currentSongIndex);
 }
 
+// Função para ir para a próxima música
 function nextSong() {
     currentSongIndex = (currentSongIndex < songs.length - 1) ? currentSongIndex + 1 : 0;
     loadSong(currentSongIndex);
 }
 
+// Função para alternar a visualização da playlist
 function togglePlaylist() {
     playlist.classList.toggle('show');
 }
 
-audioPlayer.addEventListener('ended', nextSong);
-playPauseBtn.addEventListener('click', playPauseSong);
-prevBtn.addEventListener('click', prevSong);
-nextBtn.addEventListener('click', nextSong);
-togglePlaylistBtn.addEventListener('click', togglePlaylist);
+// Função para atualizar a barra de progresso e o timer
+audioPlayer.addEventListener('timeupdate', () => {
+    const { currentTime, duration } = audioPlayer;
+    const progress = (currentTime / duration) * 100;
+    progressBar.value = progress;
+    progressBar.style.setProperty('--progress', `${progress}%`);
 
-Array.from(songList).forEach((songItem, index) => {
-    songItem.addEventListener('click', () => {
-        loadSong(index);
-    });
+    // Atualiza o timer
+    const currentMinutes = Math.floor(currentTime / 60);
+    const currentSeconds = Math.floor(currentTime % 60).toString().padStart(2, '0');
+    const durationMinutes = Math.floor(duration / 60);
+    const durationSeconds = Math.floor(duration % 60).toString().padStart(2, '0');
+
+    timer.textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
 });
 
-loadSong(currentSongIndex);
-
-document.getElementById("randomBtn").addEventListener("click", function() {
-    const randomIndex = Math.floor(Math.random() * songs.length);
-    loadSong(randomIndex);
+// Função para ajustar o tempo da música com a barra de progresso
+progressBar.addEventListener('input', () => {
+    const newTime = (progressBar.value / 100) * audioPlayer.duration;
+    audioPlayer.currentTime = newTime;
 });
 
+// Controle de velocidade (acelera ao pressionar e desacelera ao soltar)
 speedUpBtn.addEventListener('mousedown', function() {
     audioPlayer.playbackRate = 2.0;
 });
@@ -215,76 +236,47 @@ speedUpBtn.addEventListener('touchend', function() {
     audioPlayer.playbackRate = 1.0;
 });
 
-const volumeBtn = document.querySelector('.volume-btn');
-const volumeSlider = document.querySelector('.volume-control input[type="range"]');
-let isMuted = false;
+// Controle de volume
+audioPlayer.volume = volumeSlider.value / 100;
 
-// Função para alternar o estado de volume
-function toggleVolume() {
-    if (isMuted) {
-        audioPlayer.volume = volumeSlider.value / 100; // Restaura o volume
-        volumeBtn.textContent = '🔊'; // Ícone de volume
+volumeBtn.addEventListener('click', () => {
+    if (audioPlayer.volume > 0) {
+        audioPlayer.volume = 0;
+        volumeBtn.textContent = '🔇'; // Ícone de mudo
     } else {
-        audioPlayer.volume = 0; // Mute
-        volumeBtn.textContent = '🔇'; // Ícone de mutado
+        audioPlayer.volume = volumeSlider.value / 100;
+        volumeBtn.textContent = '🔊'; // Ícone de volume
     }
-    isMuted = !isMuted; // Alterna o estado
-}
+});
 
-// Configura o controle de volume
-function setupVolumeControl() {
-    // Evento de clique no botão de volume
-    volumeBtn.addEventListener('click', toggleVolume);
-
-    // Define o volume inicial do player
+volumeSlider.addEventListener('input', () => {
     audioPlayer.volume = volumeSlider.value / 100;
 
-    // Atualiza o volume quando o slider é movido
-    volumeSlider.addEventListener('input', (e) => {
-        if (!isMuted) {
-            audioPlayer.volume = e.target.value / 100; // Atualiza o volume
-        }
-    });
-}
-
-const progressBar = document.getElementById('progressBar');
-const timer = document.getElementById('timer');
-
-audioPlayer.addEventListener('timeupdate', () => {
-    const { currentTime, duration } = audioPlayer;
-    const progress = (currentTime / duration) * 100;
-    progressBar.value = progress;
-
-    // Atualiza o valor da variável CSS para a barra de progresso
-    progressBar.style.setProperty('--progress', `${progress}%`);
-
-    // Atualiza o timer
-    const currentMinutes = Math.floor(currentTime / 60);
-    const currentSeconds = Math.floor(currentTime % 60).toString().padStart(2, '0');
-    const durationMinutes = Math.floor(duration / 60);
-    const durationSeconds = Math.floor(duration % 60).toString().padStart(2, '0');
-
-    timer.textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
+    if (volumeSlider.value == 0) {
+        volumeBtn.textContent = '🔇'; // Ícone de mudo
+    } else {
+        volumeBtn.textContent = '🔊'; // Ícone de volume
+    }
 });
 
-progressBar.addEventListener('input', () => {
-    const newTime = (progressBar.value / 100) * audioPlayer.duration;
-    audioPlayer.currentTime = newTime;
+// Adiciona eventos aos controles
+audioPlayer.addEventListener('ended', nextSong);
+playPauseBtn.addEventListener('click', playPauseSong);
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+togglePlaylistBtn.addEventListener('click', togglePlaylist);
+
+Array.from(songList).forEach((songItem, index) => {
+    songItem.addEventListener('click', () => {
+        loadSong(index);
+    });
 });
 
-function loadSong(index) {
-    // Remove a classe active de todas as músicas na playlist
-    Array.from(songList).forEach(songItem => {
-        songItem.classList.remove('active-song');
-    });
+// Botão para música aleatória
+document.getElementById("randomBtn").addEventListener("click", function() {
+    const randomIndex = Math.floor(Math.random() * songs.length);
+    loadSong(randomIndex);
+});
 
-    currentSongIndex = index; 
-    audioPlayer.src = songs[index].src;
-    audioPlayer.play();
-    playPauseBtn.textContent = '⏸ ';
-    isPlaying = true;
-    songTitleElement.textContent = songs[index].title; // Atualiza o título da música
-    
-    // Adiciona a classe active na música que está tocando
-    songList[index].classList.add('active-song');
-}
+// Carrega a primeira música ao iniciar
+loadSong(currentSongIndex);
