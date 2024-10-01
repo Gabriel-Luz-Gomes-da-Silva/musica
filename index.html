@@ -40,16 +40,21 @@
         <div id="current-song-title">Tocando agora: <span id="song-title"></span></div>
         <br>
 
+        <!-- Controle de volume -->
         <div class="volume-control">
             <button class="volume-btn">🔊</button>
             <input type="range" class="progress-bar" min="0" max="100" value="50">
         </div>
         <audio id="audio-element" src="your-audio-file.mp3"></audio>
+
+        <div class="controls">
+            <!-- Botão para exibir a letra -->
+            <button id="toggleLyrics" class="toggle-btn">Letra</button>
+        </div>
         
-
+        <!-- Playlist -->
         <button id="togglePlaylist" class="toggle-btn">🎵 Playlist</button>
-
-        <br><br>
+    
         <div class="playlist" id="playlist">
             <h2>Playlist</h2>
             <ul id="songList">
@@ -184,10 +189,16 @@
                 <li>Purgatório</li>
                 <li>Pecado ou Punição</li>
                 <li>Declaração</li>
+                <li>Palavras Finais</li>
             </ul>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+    <!-- Área da letra da música -->
+    <div id="lyrics" class="lyrics-container">
+        <p>A letra da música será exibida aqui.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
