@@ -1,130 +1,204 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Luz</title>
-    <link rel="icon" href="oie_transparent (3).png">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stilos.css">
+    <title>GeekTunes</title>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="icon" href="imgbin_anime-music-video-hatsune-miku-apple-iphone-7-plus-desktop-png.png" type="Logo">
 </head>
 <body>
-    <header>
-        <h1>Bebidas</h1>
-    </header>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="vecteezy_audio-spectrum-motion-animation_49102227.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
 
-    <section class="product-list">
-        <article class="product">
-            <img src="produtos/Litro_Coca_Cola_2L_PNG_Transparente_Sem_Fundo.png" alt="Coca-Cola" class="product-image">
-            <div class="product-info">
-                <h2>Coca-Cola - 600ml</h2>
-                <p>R$ 6,00</p>
-            </div>
-        </article>
+    <!-- Container principal -->
+    <div class="player-container">
+        <h1>GeekTunes</h1>
+        <div class="audio-player">
+            <audio id="audioPlayer"></audio>
+        </div>
+
+        <div class="progress-container">
+            <input type="range" id="progressBar" class="progress-bar" value="0" step="1" min="0">
+            <div id="timer">00:00 / 00:00</div>
+        </div>
+
+        <br><br>
         
-        <hr class="product-separator">
+        <div class="controls">
+            <button id="speedUpBtn" class="control-btn">⏩</button>
+            <button id="prevBtn" class="control-btn">⏮️</button>
+            <button id="playPauseBtn" class="control-btn">▶️/⏸️</button>
+            <button id="nextBtn" class="control-btn">⏭️</button>
+            <button id="randomBtn" class="control-btn">🔀</button>
+        </div>
 
-        <article class="product">
-            <img src="produtos/pngwing.com.png" alt="Coca-Cola Sem Açúcar" class="product-image">
-            <div class="product-info">
-                <h2>Coca-Cola Sem Açúcar - 600ml</h2>
-                <p>R$ 6,00</p>
-            </div>
-        </article>
+        <!-- Título da música -->
+        <div id="current-song-title">Tocando agora: <span id="song-title"></span></div>
+        <br>
 
-        <hr class="product-separator">
+        <!-- Controle de volume -->
+        <div class="volume-control">
+            <button class="volume-btn">🔊</button>
+            <input type="range" class="progress-bar" min="0" max="100" value="50">
+        </div>
+        <audio id="audio-element" src="your-audio-file.mp3"></audio>
+
+        <div class="controls">
+            <!-- Botão para exibir a letra -->
+            <button id="toggleLyrics" class="toggle-btn">Letra</button>
+        </div>
         
-        <article class="product">
-            <img src="produtos/piracanjuba-pirakids-chocolate-valenteinaa-200ml-876x890px-frontal-esquerda-78.webp" alt="pirakids" class="product-image">
-            <div class="product-info">
-                <h2>pirakids - 200ml</h2>
-                <p>R$ 2,00</p>
-            </div>
-        </article>
+        <!-- Playlist -->
+        <button id="togglePlaylist" class="toggle-btn">🎵 Playlist</button>
+    
+        <div class="playlist" id="playlist">
+            <h2>Playlist</h2>
+            <ul id="songList">
+                <li>Coca Cola</li>
+                <li>Primeiro Vingador</li>
+                <li>Pecado da Inveja</li>
+                <li>Homem Mais Forte do Mundo</li>
+                <li>Ultraego</li>
+                <li>Príncipe do Egito</li>
+                <li>Guerra em Wano</li>
+                <li>Mochi Mochi</li>
+                <li>Se For por Você...</li>
+                <li>Pecado da Ganância</li>
+                <li>Coringas</li>
+                <li>Acho Que Eu Sou um Monstro</li>
+                <li>Mercenário Tagarela</li>
+                <li>Vibe Denji</li>
+                <li>Mago Supremo</li>
+                <li>I Am Iron Man</li>
+                <li>Eu Tô de Volta ao Lar</li>
+                <li>Momentos Com Quem Se Foi</li>
+                <li>Tô Sempre Com Raiva</li>
+                <li>Demônio Dentro de Mim</li>
+                <li>Orgulhoso Como um Leão</li>
+                <li>Conto de um Ninja Destemido</li>
+                <li>Aquele Que Copia os 1.000 Jutsus</li>
+                <li>Rei das Fadas</li>
+                <li>Shibuya</li>
+                <li>Dragão Gêmeo</li>
+                <li>Lunáticos</li>
+                <li>Me Tornei um Deus</li>
+                <li>Dever de um Pai</li>
+                <li>Nós Somos Venom</li>
+                <li>Maldição do Ódio</li>
+                <li>Pecado Mais Forte</li>
+                <li>Gear 5</li>
+                <li>Eu Sou o Capitão</li>
+                <li>Ninja Mais Forte</li>
+                <li>Um Rei</li>
+                <li>Circo dos Horrores</li>
+                <li>Terror em Londres</li>
+                <li>Olhos Vendados</li>
+                <li>Lideres</li>
+                <li>Futuro no Olhar</li>
+                <li>My Brother</li>
+                <li>Vontade do Fogo</li>
+                <li>Lenda Não Morrerá</li>
+                <li>Mais Ninguém Vai Sofrer o Que Eu Sofri</li>
+                <li>Força da Motivação</li>
+                <li>Iluminado</li>
+                <li>Apenas um Trago</li>
+                <li>Time 7</li>
+                <li>Punhos de Fogo</li>
+                <li>Eu Vou Ser o Rei Mago</li>
+                <li>Akuma no Mi</li>
+                <li>Uchiha</li>
+                <li>Kakashi</li>
+                <li>Death Note</li>
+                <li>Balas e Garras</li>
+                <li>Nosso Adeus...</li>
+                <li>Temari</li>
+                <li>Poder da Minha Ira 2</li>
+                <li>Primeiro Amor</li>
+                <li>Últimos de Nós</li>
+                <li>Amores se Acabam</li>
+                <li>Meu Bem é Você</li>
+                <li>Até o Fim</li>
+                <li>Vou Ser um Hokage</li>
+                <li>Judas</li>
+                <li>Cuidarei de Você</li>
+                <li>Tipo Jiraiya</li>
+                <li>Guerra de Amor</li>
+                <li>Apenas um Vilão por Diversão</li>
+                <li>100 Amigos</li>
+                <li>Verdadeiro Rap do Naruto</li>
+                <li>Verdadeiro Rap do Ayanokoji</li>
+                <li>Ragnarok</li>
+                <li>Provocar</li>
+                <li>My Vampire!</li>
+                <li>Muryo Kusho</li>
+                <li>Meu Sol</li>
+                <li>Lótus Negra</li>
+                <li>Gyutaro</li>
+                <li>Hokage da Quebrada</li>
+                <li>Anjo</li>
+                <li>Psicopatia</li>
+                <li>Escudo da Fúria</li>
+                <li>Izumi Miyamura</li>
+                <li>Deus do Trovão e a Rainha Oni</li>
+                <li>Pela sua Memória</li>
+                <li>Lagrimas de Sangue</li>
+                <li>Maldição</li>
+                <li>Eu me Sinto Livre</li>
+                <li>Ela é Muito Louca</li>
+                <li>Sorrindo Feito Louco</li>
+                <li>Aqui Rola Magia II</li>
+                <li>Cavaleiros de Ouro</li>
+                <li>Somos Diferentes</li>
+                <li>Nunca foi Amor</li>
+                <li>Parceria</li>
+                <li>Cavaleiro da Deusa</li>
+                <li>Adeus Cavleiros de Ouro</li>
+                <li>Bela e a Fera</li>
+                <li>Poucas Palavras e Muita Atitude II</li>
+                <li>Muito Esforço e Pouca Sorte</li>
+                <li>Orgulho de Hashira</li>
+                <li>Nunca foi Fácil</li>
+                <li>Final Feliz</li>
+                <li>Gula e Orgulho</li>
+                <li>Friendzone</li>
+                <li>Hashira do Amor</li>
+                <li>Jabami Yumeko</li>
+                <li>Rainha do Gelo</li>
+                <li>Erosennin</li>
+                <li>Amor Complicado</li>
+                <li>Monster Queen</li>
+                <li>Yuno</li>
+                <li>Senpai 2</li>
+                <li>Senpai</li>
+                <li>Chuva de Kunai</li>
+                <li>Hokage</li>
+                <li>Renegado</li>
+                <li>Pela Humanidade</li>
+                <li>Verdadeira Justiça</li>
+                <li>Mal Da Humanidade</li>
+                <li>Deuses VS Humanos</li>
+                <li>Eu Vou Morrer Feliz</li>
+                <li>Soco Sério</li>
+                <li>Cansado de Voltar</li>
+                <li>Único Homem no Céu</li>
+                <li>Novo Kira</li>
+                <li>Purgatório</li>
+                <li>Pecado ou Punição</li>
+                <li>Declaração</li>
+                <li>Palavras Finais</li>
+            </ul>
+        </div>
 
-        <hr class="product-separator">
+    <!-- Área da letra da música -->
+    <div id="lyrics" class="lyrics-container">
+        <p>A letra da música será exibida aqui.</p>
+    </div>
+</div>
 
-        <article class="product">
-            <img src="produtos/AF-mkp-mocoquinha-200-simp-258x300-1.png" alt="Mocoquinha" class="product-image">
-            <div class="product-info">
-                <h2>Mocoquinha - 200ml</h2>
-                <p>R$ 2,50</p>
-            </div>
-        </article>
-
-        <hr class="product-separator">
-
-        <article class="product">
-            <img src="produtos/12047233-removebg-preview.png.webp" alt="Chá Leão" class="product-image">
-            <div class="product-info">
-                <h2>Chá Leão - 450ml</h2>
-                <p>R$ 4,50</p>
-            </div>
-        </article>
-
-        <hr class="product-separator">
-
-        <article class="product">
-            <img src="produtos/oie_transparent.png" alt="Mupy" class="product-image">
-            <div class="product-info">
-                <h2>Mupy - 200ml</h2>
-                <p>R$ 4,00</p>
-            </div>
-        </article>
-
-        <hr class="product-separator">
-
-        <article class="product">
-            <img src="produtos/ZFOASOEkHJ3vrOQwOvSPAQA6WdrKLuHbK7WZPgCf.png" alt="Del Valle" class="product-image">
-            <div class="product-info">
-                <h2>Del Valle - 200ml</h2>
-                <p>R$ 3,50</p>
-            </div>
-        </article>
-
-        <hr class="product-separator">
-
-        <article class="product">
-            <img src="produtos/20240130105043camp_nectar_laranja_1l.png" alt="Camp" class="product-image">
-            <div class="product-info">
-                <h2>Camp - 200ml</h2>
-                <p>R$ 2,50</p>
-            </div>
-        </article>
-
-        <hr class="product-separator">
-
-        <article class="product">
-            <img src="produtos/Energetico-Monsterok.png" alt="monster" class="product-image">
-            <div class="product-info">
-                <h2>Monster - 473ml</h2>
-                <p>R$ 10,00</p>
-            </div>
-        </article>
-
-        <hr class="product-separator">
-
-        <article class="product">
-            <img src="produtos/Bebida-Energetica-Red-Bull-250ml.png" alt="Red Bull" class="product-image">
-            <div class="product-info">
-                <h2>Red Bull - 250ml</h2>
-                <p>R$ 10,00</p>
-            </div>
-        </article>
-
-        <hr class="product-separator">
-
-        <article class="product">
-            <img src="produtos/água.png" alt="Água" class="product-image">
-            <div class="product-info">
-                <h2>Água sem gas - 500ml</h2>
-                <p>R$ 2,00</p>
-            </div>
-        </article>
-    </section>
-
-    <footer class="footer">
-        <p>© 2024 Todos os direitos reservados a Studio Luz.</p>
-    </footer>
+<script src="script.js"></script>
 </body>
 </html>
