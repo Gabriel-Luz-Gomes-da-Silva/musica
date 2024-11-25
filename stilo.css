@@ -338,30 +338,3 @@ input[type="range"]::-moz-range-thumb {
     color: #3582ff; /* Cor para a música que está tocando */
     font-weight: bold; /* Estilo opcional para destacar a música */
 }
-
-.lyrics-container {
-    display: block; /* Certifique-se de que as letras sejam exibidas quando uma música tocar */
-    background-color: rgba(44, 44, 44, 0.85); 
-    padding: 20px;
-    border-radius: 15px;
-    color: #fff;
-    margin-top: 20px;
-    max-width: 400px;
-    max-height: 150px; /* Define uma altura máxima */
-    height: auto; /* Ajusta dinamicamente conforme o texto */
-    overflow-y: auto; /* Ativa o scroll apenas dentro do contêiner */
-    text-align: left; /* Alinha o texto à esquerda */
-}
-
-.lyric-line {
-    margin-bottom: 5px; /* Espaçamento entre linhas dentro da mesma estrofe */
-}
-
-.lyric-stanza {
-    margin-bottom: 20px; /* Espaçamento maior entre estrofes */
-}
-
-
-.playlist, .lyrics {
-    display: none; /* Começa escondido */
-}
