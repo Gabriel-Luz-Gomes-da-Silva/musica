@@ -1,4 +1,13 @@
 const songs = [
+    { title: "Ressureição", src: "Musicas/Rap de Jesus Cristo   A RESSUREIÇÃO  Henrique Mendonça-3aec443361d76716593a4e4dec4d3472.mp3" },
+    { title: "Tu és o meu Senhor", src: "Musicas/Rap de José   TU ÉS O MEU SENHOR  Henrique Mendonça-212b0717a522105d505c0fbf8bc2de29.mp3" },
+    { title: "Escolhidos", src: "Musicas/Rap dos Apóstolos   ESCOLHIDOS (CLIPE) I ESPECIAL 50K I Henrique Mendonça-18babbc9536bfe765bc4fcc27a5afe87.mp3" },
+    { title: "Pode me Chama de Miguel", src: "Musicas/Rap do Arcanjo Miguel   PODE ME CHAMAR DE MIGUEL  Henrique Mendonça-34ea081a6d5219bd4c140a0ceadbe58f.mp3" },
+    { title: "Por Vocês", src: "Musicas/Rap da Trindade   POR VOCÊS (CLIPE) I Uma releitura 7 Minutoz I Henrique Mendonça-3c77879a74bf00166961fcfb934dc857.mp3" },
+    { title: "Queda do Dragão", src: "Musicas/Rap da Guerra no céu   A QUEDA DO DRAGÃO (CLIPE) I Henrique Mendonça I Prod. Leonardo Liscano-dcb6d0f5ffdbc34bcd64b8d2f23ee1f4.mp3" },
+    { title: "Mensageiro🌟", src: "Musicas/Anjo Gabriel   O MENSAGEIRO🌟(CLIPE) I Rap do Anjo Gabriel I Prod. Yago-7832c69318309c238ce1cb0cbbc3c756.mp3" },
+    { title: "Maior Apóstolo do Mundo", src: "Musicas/Rap de Paulo   O MAIOR APÓSTOLO DO MUNDO (CLIPE) I Uma releitura 7 minutoz I Henrique Mendonça-d5ebb759b18c5a884599d95cdb0f624f.mp3" },
+    { title: "Até o dia que eu Morrer", src: "Musicas/Rap de Jó   ATÉ O DIA QUE EU MORRER (CLIPE) I Henrique Mendonça-78d7f7ce61db360d19ce8920e81bb6d9.mp3" },
     { title: "Coca Cola", src: "Musicas/7 Minutoz - Coca-cola.mp3" },
     { title: "Primeiro Vingador", src: "Musicas/7 Minutoz - Rap do Capitão América_ O Primeiro Vingador (NERD HITS).mp3" },
     { title: "Pecado da Inveja", src: "Musicas/7 Minutoz - Rap da Diane_ O Pecado da Inveja (NERD HITS).mp3" },
@@ -131,6 +140,7 @@ const songs = [
     { title: "Pecado ou Punição", src: "Musicas/♪ Shuji Hanma  Pecado ou Punição  AniRap-4884098b9756699e5f97c672764d10d5.mp3" },
     { title: "Declaração", src: "Musicas/DECLARAÇÃO DO NARUTO PARA SAKURA☀️🌸 (Naruto)  ProdbyIOF-fcb9f8fd460db9db640fb8aa1d9fb3af.mp3" },
     { title: "Palavras Finais", src: "Musicas/Palavras Finais (Satoru Gojo e Suguru Geto)-d9986d42270e185974aad3c3520d5488.mp3" },
+    { title: "Os Filhos do Mar", src: "Musicas/Black Flags   OS FILHOS DO MAR  Chrono-5b0ccb2792cbb624f6eb7ed36cf34c41.mp3" },
     
 ];
 
