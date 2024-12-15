@@ -1,0 +1,107 @@
+/* Estilos básicos para o layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Documento A4 frase elegante dourado.png"); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Garante que a imagem fique fixa, mesmo ao rolar */
+    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    color: #333;
+    padding: 10px;
+}
+
+
+header {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+h1 {
+    filter: drop-shadow(5px 10px 5px #cb9e46); /* Aplica a sombra */
+    font-size: 90px; /* Aumentado para dar mais destaque */
+    font-family: 'Brush Script MT', cursive;
+    color: #000000; /* Cor branca */
+    margin-bottom: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product {
+    transition: transform 0.3s ease, border 0.3s ease; /* Suaviza o retorno ao tamanho original e a remoção da borda */
+    display: flex; /* Mudança para flex para alinhar a imagem e o texto lado a lado */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left; /* Alinha o texto à esquerda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 50px; /* Define a largura padrão para todas as imagens */
+    height: 60px; /* Define a altura padrão para todas as imagens */
+    object-fit: contain; /* Garante que a imagem mantenha a proporção e fique contida no tamanho definido */
+    margin-right: 15px; /* Espaçamento entre a imagem e o texto */
+    filter: drop-shadow(1px 1px 1px #cb9e46); /* Aplica a sombra */
+}
+
+
+.product-info {
+    display: flex;
+    flex-direction: column; /* Para empilhar o nome e o preço */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+.product h2 {
+    font-size: 18px;
+    margin: 0; /* Remove margem para melhor alinhamento */
+}
+
+.product p {
+    font-size: 16px;
+    color: #cb9e46;
+    margin: 5px 0; /* Margem entre o nome e o preço */
+}
+
+.product-separator {
+    width: 300px;
+    height: 5px; /* Espessura da linha */
+    background-color: #cb9e46; /* Cor da linha */
+    margin: 10px 0; /* Espaçamento entre a linha e os produtos */
+    border-radius: 15px; /* Bordas arredondadas */
+    border: none; /* Remove qualquer borda */
+    overflow: hidden; /* Garante que qualquer arredondamento oculto seja removido */
+}
+
+/* Efeito de ampliação */
+.product-enlarge {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    border: 3px solid #cb9e46; /* Adiciona uma borda de cor dourada */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s ease, border 0.3s ease; /* Transição suave ao ampliar e voltar */
+}
+
+.footer {
+    
+    color: #cb9e46; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    width: 100%; /* Faz o rodapé ocupar toda a largura */
+    bottom: 0; /* Garante que o rodapé fique no final da página */
+}
