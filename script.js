@@ -142,6 +142,10 @@ const songs = [
     { title: "Declaração", src: "Musicas/DECLARAÇÃO DO NARUTO PARA SAKURA☀️🌸 (Naruto)  ProdbyIOF-fcb9f8fd460db9db640fb8aa1d9fb3af.mp3" },
     { title: "Palavras Finais", src: "Musicas/Palavras Finais (Satoru Gojo e Suguru Geto)-d9986d42270e185974aad3c3520d5488.mp3" },
     { title: "Os Filhos do Mar", src: "Musicas/Black Flags   OS FILHOS DO MAR  Chrono-5b0ccb2792cbb624f6eb7ed36cf34c41.mp3" },
+    { title: "Mirai Gohan", src: "Musicas/♪ Mirai Gohan (Dragon Ball Z)  Luz do Futuro  AniRap-6611dd3ceadeb6394a50454c8bdbf35c.mp3" },
+    { title: "Armagedom", src: "Musicas/♪ Sukuna (Jujutsu Kaisen)  ARMAGEDOM  AniRap-e4b719d4ea72faf0162ee96884e77397.mp3" },
+    { title: "Aladdin", src: "Musicas/ALADDIN   Lucas A.R.T. e Gabriel Rodrigues [Prod. MaaBeatz]-497f6b8b258101e34dd0a75adc93633c.mp3" },
+    { title: "Sentir", src: "Musicas/Gowther  Sentir (Nanatsu no Taizai)  Guii-bfd4ec2637eaf912566438f008c3fcab.mp3" },
     
 ];
 
