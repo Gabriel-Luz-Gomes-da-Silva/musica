@@ -160,15 +160,68 @@ h2 {
     color: #2b75ed; /* Cor do texto */
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Ajustes para dispositivos menores como o Samsung A14 */
+@media (max-width: 1080px) {
     .player-container {
-        width: 100%; /* Largura total da tela em dispositivos menores */
-        padding: 15px; /* Reduz o padding em dispositivos menores */
+        width: 90%; /* Ocupar 90% da largura do celular */
+        max-width: 380px; /* Evitar que fique muito largo */
+        padding: 15px; /* Reduzir o padding para economizar espaço */
     }
 
     h1 {
-        font-size: 1.8rem; /* Reduz o tamanho da fonte do título */
+        font-size: 1.5rem; /* Reduzir tamanho do título */
+    }
+
+    .control-btn {
+        width: 50px; /* Reduzir tamanho dos botões de controle */
+        height: 50px;
+        padding: 12px;
+    }
+
+    #songList li {
+        font-size: 14px; /* Ajustar tamanho da fonte das músicas */
+        padding: 8px; /* Reduzir padding */
+    }
+
+    /* Ajustes na barra de progresso */
+    .progress-bar {
+        height: 8px; /* Ajuste menor para telas menores */
+    }
+
+    .progress-bar::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Ajustes na barra de volume */
+    input[type="range"] {
+        width: 80px; /* Reduzir largura da barra de volume */
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Melhorando a playlist */
+    .playlist {
+        height: 120px; /* Ajustar a altura da playlist */
+    }
+
+    #playlist {
+        max-height: 120px;
+    }
+
+    /* Melhorando a experiência no celular */
+    body {
+        overflow-y: auto; /* Permitir rolagem vertical se necessário */
+        height: auto;
+    }
+
+    /* Melhorando a posição do timer */
+    #timer {
+        font-size: 12px;
+        padding: 4px 8px;
     }
 }
 
@@ -338,3 +391,4 @@ input[type="range"]::-moz-range-thumb {
     color: #3582ff; /* Cor para a música que está tocando */
     font-weight: bold; /* Estilo opcional para destacar a música */
 }
+
