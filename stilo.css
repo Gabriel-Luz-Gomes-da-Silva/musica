@@ -163,6 +163,7 @@ h2 {
 /* Ajustes para dispositivos menores como o Samsung A14 */
 @media (max-width: 1080px) {
     .player-container {
+        align-items: center;
         width: 90%;
         max-width: 360px;
         padding: 20px;
