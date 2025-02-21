@@ -146,6 +146,8 @@ const songs = [
     { title: "Armagedom", src: "Musicas/♪ Sukuna (Jujutsu Kaisen)  ARMAGEDOM  AniRap-e4b719d4ea72faf0162ee96884e77397.mp3" },
     { title: "Aladdin", src: "Musicas/ALADDIN   Lucas A.R.T. e Gabriel Rodrigues [Prod. MaaBeatz]-497f6b8b258101e34dd0a75adc93633c.mp3" },
     { title: "Sentir", src: "Musicas/Gowther  Sentir (Nanatsu no Taizai)  Guii-bfd4ec2637eaf912566438f008c3fcab.mp3" },
+    { title: "Primeiro de Cem", src: "Musicas/Primeiro De Cem TadanoKomi(Komi San Can't Communicate) Shiny_sz Prod.Try'xl-eadabae18285f0c7d0bb861adf87cb69.mp3" },
+    { title: "Selvagem", src: "Musicas/♪ Rath (Ben 10)  Selvagem  AniRap-d0667e4e05cb63daf501c1179d493c75.mp3" },
     
 ];
 

@@ -163,9 +163,15 @@ h2 {
 /* Ajustes para dispositivos menores como o Samsung A14 */
 @media (max-width: 1080px) {
     .player-container {
-        width: 90%; /* Ocupar 90% da largura do celular */
-        max-width: 380px; /* Evitar que fique muito largo */
-        padding: 15px; /* Reduzir o padding para economizar espaço */
+        width: 90%;
+        max-width: 360px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        margin-top: 150px; 
+        
     }
 
     h1 {
