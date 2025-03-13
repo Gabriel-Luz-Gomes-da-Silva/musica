@@ -1,12 +1,11 @@
 const songs = [
+    //Para ficar mais facíl copie "{ title: "", src: "" },"
+
     //Letra A
     { title: "Apenas um vilão por diversão", src: "Musicas/SOU APENAS UM VILÃO POR DIVERSÃO   Saitama Rap (Versão Sombria)  Takeru [Prod. 808 Ander]-d7e03728028efcf77f55d3c1247e4a42.mp3" },
-    { title: "A lenda não morrerá", "src": "Musicas/A Lenda Não Morrerá  Gato de Botas 2  Papyrus Da Batata.mp3" },
-    { title: "A queda do dragão", "src": "Musicas/Rap da Guerra no céu   A QUEDA DO DRAGÃO (CLIPE) I Henrique Mendonça.mp3" },
-    { title: "A vontade do fogo", "src": "Musicas/A Vontade do Fogo  Naruto (Clássico)  Basara.mp3" },
-    { title: "Acho que eu Ssu um monstro", "src": "Musicas/7 Minutoz - Rap do Gaara_ Acho Que Eu Sou um Monstro.mp3" },
-    { title: "Apenas um trago", "src": "Musicas/Rap do Sanji (One Piece)   APENAS UM TRAGO  NERD HITS.mp3" },
-    { title: "Até o dia que eu morrer", "src": "Musicas/Rap de Jó   ATÉ O DIA QUE EU MORRER (CLIPE) I Henrique Mendonça.mp3" },
+    { title: "Acho que eu su um monstro", "src": "Musicas/7 Minutoz - Rap do Gaara_ Acho Que Eu Sou um Monstro... (NERD HITS).mp3" },
+    { title: "Apenas um trago", "src": "Musicas/Rap do Sanji (One Piece)   APENAS UM TRAGO  NERD HITS-6533f135d743ff735a17a2658d41370c.mp3" },
+    { title: "Até o dia que eu morrer", "src": "Musicas/Rap de Jó   ATÉ O DIA QUE EU MORRER (CLIPE) I Henrique Mendonça-78d7f7ce61db360d19ce8920e81bb6d9.mp3" },
     { title: "Aquele que copia os 1.000 jutsus", src: "Musicas/7 Minutoz - Rap do Kakashi_ Aquele Que Copia os 1.000 Jutsus (NERD HITS).mp3" },
     { title: "Aladdin", src: "Musicas/ALADDIN   Lucas A.R.T. e Gabriel Rodrigues [Prod. MaaBeatz]-497f6b8b258101e34dd0a75adc93633c.mp3" },
     { title: "Armagedom", src: "Musicas/♪ Sukuna (Jujutsu Kaisen)  ARMAGEDOM  AniRap-e4b719d4ea72faf0162ee96884e77397.mp3" },
@@ -19,10 +18,14 @@ const songs = [
     { title: "Akuma no mi", src: "Musicas/Lucas A.R.T.   AKUMA NO MI [Prod. LionRiddims]-ff342d700a407821282e1ef4be1e2907.mp3" },
 
     //Letra B
+    { title: "Bad btch", src: "Musicas/Bad Btch ♠️ Kakegurui  Yumeko Jabami e Mary Saotome  Giu Matsu feat @duudahofc  [@ProdbyJaum]-1b8ddf3f36ee70009d6ebda9e3464166.mp3" },
+    { title: "Balas e garras", src: "Musicas/Deadpool e Wolverine   BALAS E GARRAS  7 Minutoz-2d4a7f8fff1a2dccc3bd9286123a5354.mp3" },
     { title: "Bela e a fera", src: "Musicas/Inosuke e Aoi  A BELA E A FERA (Demon Slayer)  LexClash-5b7e4562ae692be3ac4e67ad018342bc.mp3" },
 
     //Letra C
-    { title: "Cuidarei de você", src: "Musicas/Cuidarei de Você  Hori  Miyamura (Horimiya) Ft. @IsaCampx  Nickzinn-ca557e9ebea34618cfbd85b4b30c8ae8.mp3"},
+    { title: "Caçada a marinha", src: "Musicas/WLO   Caçada a Marinha [ One Piece  Cross Guild ]-46835c6171a256d59aaf2fe4ee73a122.mp3" },
+    { title: "Criatura mais forte", src: "Musicas/WLO   A Criatura Mais Forte [ Kaidou  Yujiro ]-f5e669b3b6a82409861e784fb7072b1a.mp3" },
+    { title: "Cuidarei de você", src: "Musicas/Cuidarei de Você  Hori  Miyamura (Horimiya) Ft. @IsaCampx  Nickzinn-ca557e9ebea34618cfbd85b4b30c8ae8.mp3" },
     { title: "Coca-cola", src: "Musicas/7 Minutoz - Coca-cola.mp3" },
     { title: "Conto de um ninja destemido", src: "Musicas/7 Minutoz - Rap do Jiraiya_ O Conto de um Ninja Destemido (NERD HITS).mp3" },
     { title: "Coringas", src: "Musicas/7 Minutoz  - Rap dos Coringas_ Circo dos Horrores (NERD HITS).mp3" },
@@ -42,6 +45,8 @@ const songs = [
     { title: "Demônio dentro de mim", src: "Musicas/7 Minutoz - Rap do Naruto_ O Demônio Dentro de Mim.mp3" },
 
     //Letra E
+    { title: "Esferas do dragão", src: "Musicas/ESFERAS DO DRAGÃO   Pedro Alvez, Lucas A.R.T. e Pablo Matheuz [Prod. Mantra  Zero Beatz]-0d4e2efcc592a71336bcf34ab89b57a4.mp3" },
+    { title: "Evolução", src: "Musicas/WLO   Evolução [ Shuumatsu no Valkyrie  Nikola Tesla ]-6f44129ff16a969d1e63a9882861326d.mp3" },
     { title: "Eu vou morrer feliz", src: "Musicas/♪ Desabafo Escanor  Eu Vou Morrer Feliz  AniRap (@HunterMsc)-1f0ba269f6c2c0b3344964823ef8c2f3.mp3" },
     { title: "Erosennin", src: "Musicas/EROSENNIN ( Rap do Jiraiya )  FELÍCIA ROCK Ft. TAKERU [ Prod. 808 Ander ]-ad169ac851ca62b5832853f30ea19270.mp3" },
     { title: "Eu me sinto livre", src: "Musicas/♪ Akira Tendou 😈📘  Eu Me Sinto Livre (Zom 100 Bucket List of the Dead)  LexClash-36d831fd02904c5f97654de3545ffb09.mp3" },
@@ -52,6 +57,7 @@ const songs = [
     { title: "Eu tô de volta ao var", src: "Musicas/7 Minutoz - Rap do Homem-Aranha_ Eu Tô de Volta ao Lar (NERD HITS).mp3" },
 
     //Letra F
+    { title: "Fluxo", src: "Musicas/LHz   FLUXØ  Ryusei Shidou  (Official Music Video)-f8f823975c5f59276a672f8263278e99.mp3" },
     { title: "Friendzone", src: "Musicas/FRIENDZONE Rap   (ANIME MIX)  FELÍCIA ROCK  [Prod. Rome]-c104fe203973335c403f5bbcc69e55e6.mp3" },
     { title: "Final feliz", src: "Musicas/♪ Tomioka e Shinobu 🌊🦋 (Demon Slayer)  FINAL FELIZ  LexClash e @Meizy-8d4fe1cb4e572adce0875cd9cf051907.mp3" },
 
@@ -74,6 +80,7 @@ const songs = [
     { title: "I am iron man", src: "Musicas/7 Minutoz - Rap do Homem de Ferro_ I Am Iron Man (NERD HITS).mp3" },
 
     //Letra J
+    { title: "Jo ken", src: "Musicas/RAP DA MARY SAOTOME (Kakegurui) JO KEN 🃏  TRAP InsaneGirl  Feat. @JKZOficial [Prod.Try'xl]-f394c2088bb56d4d83e8560a89fd9dcd.mp3" },
     { title: "Jabami yumeko", src: "Musicas/O RAP MAIS SE❌❌Y DA JABAMI YUMEKO (Kakegurui)  FELÍCIA ROCK [Prod. Sidney Scaccio]-6fc3032bf627411c8e80f52dc2ea69d8.mp3" },
     { title: "Judas", src: "Musicas/7 Minutoz   JUDAS-2ed23c94f19ce1fe1cc0ec7becae976a.mp3" },
 
@@ -88,6 +95,8 @@ const songs = [
     { title: "Lunáticos", src: "Musicas/Lunáticos  Pernalonga e Pica-Pau  Papyrus Da Batata.mp3" },
 
     //Letra M
+    { title: "Minha vez de jogar", src: "Musicas/Ayanokoji Vs Ryuen (Classroom of the Elite)   Minha Vez de Jogar  Shiny Ft. @OkabeOficial-397c362ec82f90ab513af18d76e0f20a.mp3" },
+    { title: "Monstro", src: "Musicas/♪ Monstro 💔  Gaara (Naruto) JRP-8ae8317a9bef748811cf61a0e5139137.mp3" },
     { title: "Mirai gohan", src: "Musicas/♪ Mirai Gohan (Dragon Ball Z)  Luz do Futuro  AniRap-6611dd3ceadeb6394a50454c8bdbf35c.mp3" },
     { title: "Mal da humanidade", src: "Musicas/♪ Jack Estripador  O Mal Da Humanidade  AniRap (@Prod Hunter)-4b02b4ac1ed77915980d216f3617cc94.mp3" },
     { title: "Monster queen", src: "Musicas/Monster Queen ( Rap da Zero Two )  FELÍCIA ROCK [ Prod. 808 Ander ]-60460cdd1fee677cbeda55424e5a51a4.mp3" },
@@ -96,7 +105,7 @@ const songs = [
     { title: "My vampire!", src: "Musicas/My Vampire! (Call Of The Night)  Nickzinn-39cd8095031e610c68742bde964a3325.mp3" },
     { title: "Muryo kusho", src: "Musicas/MURYO KUSHO   Gojo (Jujutsu Kaisen)  Takeru-58d6d5e9e444ccc212bf6909dbd32932.mp3" },
     { title: "Meu sol", src: "Musicas/Meu Sol (Tenki no Ko)  Nickzinn-c7a9a82d7bbcc3a325914f333de2d272.mp3" },
-    { title: "Meu bem é você", src: "Musicas/Meu bem é você 💔  Obito e Rin  ft. @AnnyTHN  JRP-eb74464b502454c7757dd065a2aa23d0.mp3"},
+    { title: "Meu bem é você", src: "Musicas/Meu bem é você 💔  Obito e Rin  ft. @AnnyTHN  JRP-eb74464b502454c7757dd065a2aa23d0.mp3" },
     { title: "Mais ninguém vai sofrer o que eu sofri", src: "Musicas/7 Minutoz - Rap do Obito_ Mais Ninguém Vai Sofrer o Que Eu Sofri (NERD HITS).mp3" },
     { title: "My Brother", src: "Musicas/Itadori & Todo (Jujutsu Kaisen) - My Brother _ M4rkim ft. @KaitoOFC_pbPqe6doxhk.mp3" },
     { title: "Maldição do ódio", src: "Musicas/7 Minutoz - Rap do Sasuke_ Maldição do Ódio (Nerd Hits).mp3" },
@@ -133,7 +142,7 @@ const songs = [
     { title: "Pela sua memória", src: "Musicas/Night Raid 🩸 (Akame Ga Kill)  PELA SUA MEMÓRIA  LexClash-b3e0f66797fa5bbb3a7db359fc45f10e.mp3" },
     { title: "Psicopatia", src: "Musicas/FELÍCIA ROCK   Psicopatia (Anime Mix)  Feat. Takeru  Prod. MK-a98f47794f5e5a299301c97ddaf3de54.mp3" },
     { title: "Provocar", src: "Musicas/Provocar (Uzaki chan wa Asobitai!)  Nickzinn-dcec17d5beb7919e90b33c5f49b1d189.mp3" },
-    { title: "Primeiro amor", src: "Musicas/❤️ Primeiro amor (Minato e Kushina) JRP ft. @Meizy-c39b9a35ab0f1e4cc0ec3bc7559166a2.mp3"},
+    { title: "Primeiro amor", src: "Musicas/❤️ Primeiro amor (Minato e Kushina) JRP ft. @Meizy-c39b9a35ab0f1e4cc0ec3bc7559166a2.mp3" },
     { title: "Poder da minha ira", src: "Musicas/Rap do Broly, Kyuubi e Levi   O PODER DA MINHA IRA 2  NERD HITS-922b80532896f574b42502701b829b80.mp3" },
     { title: "Punhos de fogo", src: "Musicas/Rap do Ace (One Piece)   PUNHOS DE FOGO  NERD HITS-104f5dfc460e87402a612b4b6003c64a.mp3" },
     { title: "Príncipe do egito", src: "Musicas/Moisés (Êxodo)  O Príncipe do Egito  Henrique Mendonça.mp3" },
@@ -153,7 +162,7 @@ const songs = [
     { title: "Rainha do gelo", src: "Musicas/RAINHA DO GELO   Esdeath (Akame ga Kill)  Felícia Rock-fddb8b54dc8c76eb7a67b7acfd44c8e2.mp3" },
     { title: "Ragnarok", src: "Musicas/RAGNAROK   Shuumatsu no Valkyrie  Takeru  UnionZ-ef033ceb70990860f72b75684c0e3e7e.mp3" },
     { title: "Rei das fadas", src: "Musicas/7 Minutoz - Rap do King_ Rei das Fadas.mp3" },
-    { title: "Respeita o arcanjo", src: "Musicas/Rap dos Arcanjos   RESPEITA O ARCANJO (CLIPE) I Uma Releitura 7 Minutoz I Henrique Mendonça-bfcfeb2d195131871e7b9d5e071391df.mp3"},
+    { title: "Respeita o arcanjo", src: "Musicas/Rap dos Arcanjos   RESPEITA O ARCANJO (CLIPE) I Uma Releitura 7 Minutoz I Henrique Mendonça-bfcfeb2d195131871e7b9d5e071391df.mp3" },
     { title: "Ressureição", src: "Musicas/Rap de Jesus Cristo   A RESSUREIÇÃO  Henrique Mendonça-3aec443361d76716593a4e4dec4d3472.mp3" },
 
     //Letra S
@@ -165,9 +174,11 @@ const songs = [
     { title: "Sorrindo feito louco", src: "Musicas/Rap do Luck Voltia (Black Clover)  SORRINDO FEITO LOUCO  LexClash-f0a4ee9703afe2a08f46467dcf97b1d6.mp3" },
     { title: "Somos diferentes", src: "Musicas/Rap Yami e Charlotte 🖤💙 (Black Clover)  SOMOS DIFERENTES  LexClash FT Hada-dc49141ff2fa53b059d0664fe6e7842f.mp3" },
     { title: "Shibuya", src: "Musicas/Shibuya  Jujutsu Kaisen  ESPECIAL URT.mp3" },
-    { title: "Se for por você...", src: "Musicas/7 Minutoz - Rap da Hinata_ Se For por Você... (NERD HITS).mp3" },
+    { title: "Se for por você", src: "Musicas/7 Minutoz - Rap da Hinata_ Se For por Você... (NERD HITS).mp3" },
 
     //Letra T
+    { title: "Tributo aos clássicos", src: "Musicas/TRIBUTO AOS CLÁSSICOS   Lucas A.R.T., Pablo Matheuz e Gabriel Rodrigues [Prod. JpBeatz]-0a5181b644f7ac5ef5167f3a9cc3165d.mp3" },
+    { title: "Tipo kimi no na wa", src: "Musicas/TIPO KIMI NO NA WA 💌  May Abreu  [Prod.Try'xl]-1daa8b817cffe9084fcb5cfc562cf88c.mp3" },
     { title: "Tipo jiraiya", src: "Musicas/Tipo Jiraiya 🐸😈 (Naruto)  Style Trap  Prod. Sidney Scaccio x Johnny Lowd  MHRAP-195e9d5b42a1e3688710f3c5cefb98a0.mp3" },
     { title: "Temari", src: "Musicas/TEMARI   Lucas A.R.T. e Gabriel Rodrigues [Prod. 808 Ander]-25fbc2f6c8926f71fbc9383bb9fcb847.mp3" },
     { title: "Time 7", src: "Musicas/Rap do Kakashi, Naruto, Sasuke e Sakura   TIME 7  NERD HITS-a3130bd7cac8c22643cb6e59c8e0cf4e.mp3" },
@@ -198,7 +209,7 @@ const songs = [
     { title: "Yuno", src: "Musicas/O RAP MAIS SE DA YUNO + 18 ( Mirai Nikki )  FELÍCIA ROCK [ Prod. Sidney Scaccio ]-d5f7673dc86a44c4bdfeb00a9d93941f.mp3" },
 
     //Letra Z
-    
+
 ];
 
 let currentSongIndex = 0;
@@ -227,7 +238,7 @@ function loadSong(index) {
         songItem.classList.remove('active-song');
     });
 
-    currentSongIndex = index; 
+    currentSongIndex = index;
     audioPlayer.src = songs[index].src;
     audioPlayer.play();
     playPauseBtn.textContent = '⏸ ';
@@ -291,19 +302,19 @@ progressBar.addEventListener('input', () => {
 });
 
 // Controle de velocidade (acelera ao pressionar e desacelera ao soltar)
-speedUpBtn.addEventListener('mousedown', function() {
+speedUpBtn.addEventListener('mousedown', function () {
     audioPlayer.playbackRate = 2.0;
 });
 
-speedUpBtn.addEventListener('mouseup', function() {
+speedUpBtn.addEventListener('mouseup', function () {
     audioPlayer.playbackRate = 1.0;
 });
 
-speedUpBtn.addEventListener('touchstart', function() {
+speedUpBtn.addEventListener('touchstart', function () {
     audioPlayer.playbackRate = 2.0;
 });
 
-speedUpBtn.addEventListener('touchend', function() {
+speedUpBtn.addEventListener('touchend', function () {
     audioPlayer.playbackRate = 1.0;
 });
 
@@ -344,7 +355,7 @@ Array.from(songList).forEach((songItem, index) => {
 });
 
 // Botão para música aleatória
-document.getElementById("randomBtn").addEventListener("click", function() {
+document.getElementById("randomBtn").addEventListener("click", function () {
     const randomIndex = Math.floor(Math.random() * songs.length);
     loadSong(randomIndex);
 });
@@ -359,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Botão para exibir/ocultar a letra
-document.getElementById('toggleLyrics').addEventListener('click', function() {
+document.getElementById('toggleLyrics').addEventListener('click', function () {
     const lyricsContainer = document.getElementById('lyrics');
     const playlistContainer = document.getElementById('playlist');
 
@@ -373,7 +384,7 @@ document.getElementById('toggleLyrics').addEventListener('click', function() {
 });
 
 // Alternar visibilidade da playlist e letra
-togglePlaylistBtn.addEventListener('click', function() {
+togglePlaylistBtn.addEventListener('click', function () {
     const playlistContainer = document.getElementById('playlist');
     const lyricsContainer = document.getElementById('lyrics');
 
@@ -400,7 +411,5 @@ function loadSong(index) {
     songList[index].classList.add('active-song');
 
     // Atualiza o título da página para "GeekTunes - Nome da Música"
-    document.title = `GeekTunes - ${songs[index].title}`;  // Aqui, "GeekTunes" é o nome do seu site
+    document.title = `GeekTunes - ${songs[index].title}`;
 }
-
-// A função de playPauseSong e outras funções continuam iguais...
