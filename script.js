@@ -3,7 +3,7 @@ const songs = [
 
     //Letra A
     { title: "Apenas um vilão por diversão", src: "Musicas/SOU APENAS UM VILÃO POR DIVERSÃO   Saitama Rap (Versão Sombria)  Takeru [Prod. 808 Ander]-d7e03728028efcf77f55d3c1247e4a42.mp3" },
-    { title: "Acho que eu su um monstro", "src": "Musicas/7 Minutoz - Rap do Gaara_ Acho Que Eu Sou um Monstro... (NERD HITS).mp3" },
+    { title: "Acho que eu sou um monstro", "src": "Musicas/7 Minutoz - Rap do Gaara_ Acho Que Eu Sou um Monstro... (NERD HITS).mp3" },
     { title: "Apenas um trago", "src": "Musicas/Rap do Sanji (One Piece)   APENAS UM TRAGO  NERD HITS-6533f135d743ff735a17a2658d41370c.mp3" },
     { title: "Até o dia que eu morrer", "src": "Musicas/Rap de Jó   ATÉ O DIA QUE EU MORRER (CLIPE) I Henrique Mendonça-78d7f7ce61db360d19ce8920e81bb6d9.mp3" },
     { title: "Aquele que copia os 1.000 jutsus", src: "Musicas/7 Minutoz - Rap do Kakashi_ Aquele Que Copia os 1.000 Jutsus (NERD HITS).mp3" },
